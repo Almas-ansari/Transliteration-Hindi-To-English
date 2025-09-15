@@ -33,8 +33,9 @@ models by incorporating the previous outputs with current learnings.
 ---
 
 ## Problem Statement
-- **Input:** Hindi word in Devanagari script.
+
 ![input sample](assets/data_input_samples.png)
+- **Input:** Hindi word in Devanagari script.
 - **Output:** Equivalent Romanized word.  
 - **Goal:** Achieve accurate character-level transliteration to support multilingual tasks such as cross-lingual IR, named entity recognition, and code-mixed text processing.  
 - **Challenge:** Multiple valid Roman spellings exist for the same Hindi word, making Word Error Rate high even if Character Error Rate is low.
@@ -42,6 +43,7 @@ models by incorporating the previous outputs with current learnings.
 ---
 
 ## Dataset
+![Data File](hindi-english_pairs_data.txt)
 - **Size:** 30,822 word pairs (Devanagari → Roman).  
 - **Format:** CSV file with two columns (`Hindi_word`, `English_word`).  
 - **Preprocessing:**  
@@ -76,14 +78,16 @@ These results indicate that although many words differed slightly in spelling (`
 ![sample output](assets/model_output_result.png)
 
 ---
-📑 For a detailed explanation, see the **full Project report** ![Project Report (PDF)](assets/Transliteration_Report.pdf).
+📑 For a detailed explanation, see the **full Project report** ![Project Report (PDF)](assets/Transliteration_report.pdf).
 
 ## Future Work
 - Extend model to **bidirectional transliteration** (Roman → Devanagari).  
 - Explore **Transformer-based architectures** (IndicBERT, mBERT, etc.).  
 - Improve handling of rare and longer words unseen during training.  
 - Apply to **multilingual Indic transliteration** tasks.
-Reach out to **itsmealmas.ansari@gmail.com** for further Collaboration.
+
+
+Please reach out to **itsmealmas.ansari@gmail.com** for further Collaboration.
 
 ---
 
